@@ -1,12 +1,3 @@
-Members
-|      Member Name     | Github Account |
-| ---------------------| ---------------|
-| Rad Eshghi           | Rad-tech-spec  | 
-| Alexander Samaniego  | alexsam29      | 
-| Nikita Mezhenskyi    | nmezhenskyi    | 
-| Atif Ali             | aali309        |
-
-
 # Overview
 Health is a necessity that should be made available to all living things. Today the usage of modern technology and tools is continuously increasing, and the prevention of health issues is seen in most of these technologies we use. Health surveys are commonly conducted in daily human lives and have proven to be reliable. Technology has provided people with the knowledge and power to predict, solve and prevent some of these chronic health issues and saving several lives. With the same idea of improving the health conditions and improve time management, we as young software developers saw a window of opportunity to make use of our expertise in this field. 
 
@@ -33,3 +24,10 @@ The backbone of this application will be the web API that will connect the web a
 ## Goal
 The goal of this project is to make health care more **convenient** and **accessible**. This can be achieved by connecting patients with doctors through the internet. A lot of routine operations such as booking appointments, reporting symptoms, getting test results, etc. could be done virtually. Our project provides means to do this and more. There are some applications that are out there doing something similar, but they don’t have most of the feature that we are trying to have with our application. Patients need to use one application to get most tasks done instead of jumping between different apps. This is our challenge to make it **unique** and **simpler** than other apps so everyone can figure it out in no time.  
 
+## Members
+|      Member Name     | Github Account |
+| ---------------------| ---------------|
+| Rad Eshghi           | Rad-tech-spec  | 
+| Alexander Samaniego  | alexsam29      | 
+| Nikita Mezhenskyi    | nmezhenskyi    | 
+| Atif Ali             | aali309        |
