@@ -1,4 +1,3 @@
-# Group07
 Members
 |      Member Name     | Github Account |
 | ---------------------| ---------------|
