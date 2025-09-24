@@ -1,0 +1,49 @@
+<div *ngIf="user" class="bg-dark">
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="col text-white text-center">View Appointments</h3>
+        </div>
+        <div *ngFor="let appointment of appointments">
+            <div *ngIf="appointment.status != 'cancelled'" class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card border-primary rounded bg-light">
+                        <div class="card-header border-dark">
+                            <h5 class="card-subtitle">Date: {{appointment.date}}</h5>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"> Appointment Details</h4>
+                            <div class="row align-items-center">
+                                <div class="col-md">
+                                    <p><b>Patient ID: </b>{{appointment.patientId}}</p>
+                                    <p><b>Start Time: </b>{{appointment.startTime.slice(0, -3)}}</p>
+                                    <p><b>End Time: </b>{{appointment.endTime.slice(0, -3)}}</p>
+                                    <p><b>Status: </b>{{appointment.status}}</p>
+                                    <p><b>Reason for Appointment: </b>{{appointment.doctorNotes}}</p>
+                                    <p><b>Symptoms:</b></p>                                    
+                                    <ul>
+                                        <li *ngFor="let symptom of appointment.selfAssessment.symptoms"> {{symptom.description}}</li>
+                                    </ul>
+                                    <p><b>Additional details: </b>{{appointment.selfAssessment.notes}}</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-danger btn-block"
+                                        (click)="deleteAppointment(appointment.id)">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button routerLink="/dashboard" routerLinkActive="active" type="button"
+                class="cancelbtn btn-danger btn-lg">Go Back</button>
+        </div>
+        <br>
+    </div>
+</div>
+<div *ngIf="errors === true">
+    <app-sign-in></app-sign-in>
+</div>

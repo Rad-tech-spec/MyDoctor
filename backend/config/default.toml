@@ -1,0 +1,26 @@
+# Main config file
+
+title = "API Config"
+
+[environment]
+host = "localhost"
+port = "5000"
+secure = false
+
+[database]
+type = "postgres"
+host = "fanny.db.elephantsql.com"
+port = "5432"
+name = "dkwrpeby"
+username = "dkwrpeby"
+password = "SCM6PaXbLHNa7cc-zXadKqGlh8jRDdfD"
+
+[typeorm]
+entities = [ "dist/models/**/*.js" ]
+migrations = [ "dist/migrations/**/*.js" ]
+
+[secrets]
+session = "jKyQtUyo0TfPqVuyomPs5uVwXfSxHDdy"
+
+[client]
+origin = "http://localhost:4200"
